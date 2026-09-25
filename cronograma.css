@@ -1,0 +1,63 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18;
+    font-family: Arial, helvetica, sans-serif;
+
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+caption{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+table, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+table{
+    background-color: rgb(19, 127, 216);
+}
+th{
+    background-color: rgb(1, 1, 94);
+    color: white;
+}
+.intervalo{
+    background-color: #ccc;
+    text-align: center;
+}
+
+.cl1{
+    background-color: rgb(86, 172, 160);
+}
+.cl2{
+    background-color: rgb(14, 241, 109);
+}
+.cl3{
+    background-color: rgb(189, 201, 27);
+}
+.cl4{
+    background-color: rgb(168, 107, 57);
+}
+.cl5{
+    background-color: rgb(191, 58, 243);
+}
+tr:hover > td{
+    background-color: rgb(245, 206, 133);
+}
+
+td:hover{
+    color: red;
+}
