@@ -1,0 +1,251 @@
+:root {
+  /* Cores padrão das atividades (modificáveis via JavaScript) */
+  --bg-trabalho: #e74c3c;
+  --bg-estudos: #58d68d;
+  --bg-materia1: #5d6d7e;
+  --bg-materia2: #e59866;
+  --bg-materia3: #8e44ad;
+  --bg-materia4: #f1948a;
+  --bg-materia5: #2980b9;
+  --bg-materia6: #00a8ff;
+  --bg-materia7: #cc0000;
+  --bg-rotina: #3f51b5;
+  --bg-intervalo: #eaeded;
+  --bg-lazer: #d5f5e3;
+  --bg-dormir: #85929e;
+
+  /* Cores Fixas da Estrutura */
+  --header-blue: #090a2b;
+  --th-blue: #0d0c80;
+  --time-col-blue: #111096;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  padding-bottom: 40px;
+}
+
+/* BANNER DE CONTROLE DE CORES E INTEGRANTES */
+.team-bar {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.team-bar-title {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #a5b1c2;
+  text-transform: uppercase;
+}
+
+.team-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.control-group select {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  background-color: #3d3d5c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.colors-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+}
+
+.color-picker-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #2b2b40;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.color-picker-item input[type="color"] {
+  border: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.work-badge {
+  background: #27ae60;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+/* HEADER MODELO ORIGINAL */
+.header-banner {
+  background-color: var(--header-blue);
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.user-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 20px;
+  position: relative;
+}
+
+.user-avatar-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.avatar-circle {
+  width: 100%;
+  height: 100%;
+  background-color: #a83279;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.avatar-icon {
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  background: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.user-info-box {
+  background-color: var(--header-blue);
+  color: white;
+  padding: 12px 25px;
+  min-width: 380px;
+  border-radius: 2px;
+}
+
+.user-info-box h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.user-info-box p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* TABELA DE CRONOGRAMA */
+.table-container {
+  padding: 0 10px;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 12px;
+}
+
+.schedule-table th, 
+.schedule-table td {
+  border: 1px solid #000;
+  padding: 6px 4px;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.schedule-table th {
+  background-color: var(--th-blue);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 4px;
+}
+
+.time-col {
+  background-color: var(--time-col-blue) !important;
+  color: white !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* CLASSES DINÂMICAS DE CATEGORIAS DE CORES */
+.cat-trabalho { background-color: var(--bg-trabalho) !important; color: #fff; font-weight: bold; }
+.cat-estudos  { background-color: var(--bg-estudos) !important; color: #000; }
+.cat-materia1 { background-color: var(--bg-materia1) !important; color: #fff; }
+.cat-materia2 { background-color: var(--bg-materia2) !important; color: #000; }
+.cat-materia3 { background-color: var(--bg-materia3) !important; color: #fff; }
+.cat-materia4 { background-color: var(--bg-materia4) !important; color: #000; }
+.cat-materia5 { background-color: var(--bg-materia5) !important; color: #fff; }
+.cat-materia6 { background-color: var(--bg-materia6) !important; color: #000; }
+.cat-materia7 { background-color: var(--bg-materia7) !important; color: #fff; font-weight: bold; }
+.cat-rotina   { background-color: var(--bg-rotina) !important; color: #fff; }
+.cat-intervalo{ background-color: var(--bg-intervalo) !important; color: #333; }
+.cat-lazer    { background-color: var(--bg-lazer) !important; color: #000; font-weight: bold; }
+.cat-dormir   { background-color: var(--bg-dormir) !important; color: #fff; font-weight: bold; }
