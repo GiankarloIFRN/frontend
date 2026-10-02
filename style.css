@@ -1,6 +1,6 @@
 :root {
 
-  --bg-trabalho: #e74c3c;
+  --bg-trabalho: #3ccde7;
   --bg-estudos: #58d68d;
   --bg-materia1: #5d6d7e;
   --bg-materia2: #e59866;
@@ -8,13 +8,14 @@
   --bg-materia4: #f1948a;
   --bg-materia5: #2980b9;
   --bg-materia6: #00a8ff;
-  --bg-materia7: #cc0000;
+  --bg-materia7: #8d8282;
+  --bg-materia8: #c140fd;
   --bg-rotina: #3f51b5;
   --bg-intervalo: #eaeded;
   --bg-lazer: #d5f5e3;
   --bg-dormir: #85929e;
 
-  /* Cores Fixas da Estrutura */
+
   --header-blue: #090a2b;
   --th-blue: #0d0c80;
   --time-col-blue: #111096;
@@ -33,7 +34,7 @@ body {
   padding-bottom: 40px;
 }
 
-/* BANNER DE CONTROLE DE CORES E INTEGRANTES */
+
 .team-bar {
   background-color: #1e1e2f;
   color: #fff;
@@ -118,7 +119,7 @@ body {
   font-weight: bold;
 }
 
-/* HEADER MODELO ORIGINAL */
+
 .header-banner {
   background-color: var(--header-blue);
   color: white;
@@ -138,41 +139,7 @@ body {
   position: relative;
 }
 
-.user-avatar-container {
-  position: relative;
-  width: 60px;
-  height: 60px;
-}
 
-.avatar-circle {
-  width: 100%;
-  height: 100%;
-  background-color: #a83279;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  border: 2px solid #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.avatar-icon {
-  position: absolute;
-  bottom: 0;
-  right: -5px;
-  background: #fff;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-}
 
 .user-info-box {
   background-color: var(--header-blue);
@@ -193,7 +160,7 @@ body {
   font-weight: bold;
 }
 
-/* TABELA DE CRONOGRAMA */
+
 .table-container {
   padding: 0 10px;
   overflow-x: auto;
@@ -235,7 +202,6 @@ body {
   text-align: center;
 }
 
-/* CLASSES DINÂMICAS DE CATEGORIAS DE CORES */
 .cat-trabalho { background-color: var(--bg-trabalho) !important; color: #fff; font-weight: bold; }
 .cat-estudos  { background-color: var(--bg-estudos) !important; color: #000; }
 .cat-materia1 { background-color: var(--bg-materia1) !important; color: #fff; }
@@ -245,6 +211,7 @@ body {
 .cat-materia5 { background-color: var(--bg-materia5) !important; color: #fff; }
 .cat-materia6 { background-color: var(--bg-materia6) !important; color: #000; }
 .cat-materia7 { background-color: var(--bg-materia7) !important; color: #fff; font-weight: bold; }
+.cat-materia8 { background-color: var(--bg-materia7) !important; color: #fff; font-weight: bold; }
 .cat-rotina   { background-color: var(--bg-rotina) !important; color: #fff; }
 .cat-intervalo{ background-color: var(--bg-intervalo) !important; color: #333; }
 .cat-lazer    { background-color: var(--bg-lazer) !important; color: #000; font-weight: bold; }
